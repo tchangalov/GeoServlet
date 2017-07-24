@@ -1,0 +1,174 @@
+﻿<ArcGIS defaultAssembly="GeoServlet.dll" defaultNamespace="GeoServlet" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{60430674-fec2-4c40-9ae1-f606ea877284}" version="1.0" desktopVersion="2.0.8933">
+    <Name>GeoServlet</Name>
+    <Description>GeoServlet description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>ivel9171</Author>
+    <Company>Acme</Company>
+    <Date>7/22/2017 10:08:47 AM, 2017</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="GeoServlet_Module" className="Module1" autoLoad="true" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="GeoServlet_Tab1" caption="New Tab">
+          <group refID="GeoServlet_Group1"/>
+        </tab>-->
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="GeoServlet_Group1" caption="GeoServlet" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+          <button refID="GeoServlet_UploadFileButton" size="large" />
+          <!--<checkBox refID="MyCustomCheckBox" size="small" />-->
+          <menu refID="GeoServlet_Menu_Value" size="middle" />
+          <menu refID="GeoServlet_Menu_Unit" size="middle" />
+          <button refID="GeoServlet_DeployButton" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- File upload Control -->
+        <button id="GeoServlet_UploadFileButton" caption="File Upload" className="UploadFileButton" loadOnClick="true" largeImage="Images\FileUpload_32.png">
+          <tooltip heading="Source Upload"> Upload your python (.py) source code<disabledText /></tooltip>
+        </button>
+        <!-- Menu Control -->
+        <button id="GeoServlet_Menu_Value_Items_Button1" caption="1" className="Menu_Value_button1" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 1">ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button2" caption="2" className="Menu_Value_button2" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 2">ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button3" caption="3" className="Menu_Value_button3" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 3">ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button4" caption="4" className="Menu_Value_button4" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 4">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button5" caption="5" className="Menu_Value_button5" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 5">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button6" caption="6" className="Menu_Value_button6" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 6">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button7" caption="7" className="Menu_Value_button7" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 7">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button8" caption="8" className="Menu_Value_button8" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 8">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button9" caption="9" className="Menu_Value_button9" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 9">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button10" caption="10" className="Menu_Value_button10" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 10">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button15" caption="15" className="Menu_Value_button15" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 15">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button20" caption="20" className="Menu_Value_button20" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 20">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button25" caption="25" className="Menu_Value_button25" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 25">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button30" caption="30" className="Menu_Value_button30" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 30">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button35" caption="35" className="Menu_Value_button35" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 35">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button40" caption="40" className="Menu_Value_button40" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 40">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button45" caption="45" className="Menu_Value_button45" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 45">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button50" caption="50" className="Menu_Value_button50" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 50">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button55" caption="55" className="Menu_Value_button55" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 55">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Value_Items_Button60" caption="60" className="Menu_Value_button60" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 60">
+            ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Unit_Items_Button1" caption="Seconds" className="Menu_Unit_button1" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 1">ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Unit_Items_Button2" caption="Minutes" className="Menu_Unit_button2" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 2">ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Unit_Items_Button3" caption="Hours" className="Menu_Unit_button3" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 3">ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Unit_Items_Button4" caption="Days" className="Menu_Unit_button4" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 3">  ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Unit_Items_Button5" caption="Weeks" className="Menu_Unit_button5" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 3"> ToolTip<disabledText /></tooltip>
+        </button>
+        <button id="GeoServlet_Menu_Unit_Items_Button6" caption="Months" className="Menu_Unit_button6" loadOnClick="true" smallImage="Images\GenericButtonGreen16.png" largeImage="Images\GenericButtonGreen32.png">
+          <tooltip heading="Menu Button 3">  ToolTip<disabledText /></tooltip>
+        </button>
+        
+        <button id="GeoServlet_DeployButton" caption="Deploy" className="DeployButton" loadOnClick="true" smallImage="Images\Deploy_16.png" largeImage="Images\Deploy_32.png">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+      </controls>
+      <menus>
+        <menu id="GeoServlet_Menu_Value" caption="Time Value" smallImage="GenericButtonGreen16.png" largeImage="GenericButtonGreen32.png">
+          <button refID="GeoServlet_Menu_Value_Items_Button1" />
+          <button refID="GeoServlet_Menu_Value_Items_Button2" />
+          <button refID="GeoServlet_Menu_Value_Items_Button3" />
+          <button refID="GeoServlet_Menu_Value_Items_Button4" />
+          <button refID="GeoServlet_Menu_Value_Items_Button5" />
+          <button refID="GeoServlet_Menu_Value_Items_Button6" />
+          <button refID="GeoServlet_Menu_Value_Items_Button6" />
+          <button refID="GeoServlet_Menu_Value_Items_Button7" />
+          <button refID="GeoServlet_Menu_Value_Items_Button8" />
+          <button refID="GeoServlet_Menu_Value_Items_Button9" />
+          <button refID="GeoServlet_Menu_Value_Items_Button10" />
+          <button refID="GeoServlet_Menu_Value_Items_Button15" />
+          <button refID="GeoServlet_Menu_Value_Items_Button20" />
+          <button refID="GeoServlet_Menu_Value_Items_Button25" />
+          <button refID="GeoServlet_Menu_Value_Items_Button30" />
+          <button refID="GeoServlet_Menu_Value_Items_Button35" />
+          <button refID="GeoServlet_Menu_Value_Items_Button40" />
+          <button refID="GeoServlet_Menu_Value_Items_Button45" />
+          <button refID="GeoServlet_Menu_Value_Items_Button50" />
+          <button refID="GeoServlet_Menu_Value_Items_Button55" />
+          <button refID="GeoServlet_Menu_Value_Items_Button60" />
+        </menu>
+        <menu id="GeoServlet_Menu_Unit" caption="Time Domain" smallImage="GenericButtonGreen16.png" largeImage="GenericButtonGreen32.png">
+          <button refID="GeoServlet_Menu_Unit_Items_Button1" />
+          <button refID="GeoServlet_Menu_Unit_Items_Button2" />
+          <button refID="GeoServlet_Menu_Unit_Items_Button3" />
+          <button refID="GeoServlet_Menu_Unit_Items_Button4" />
+          <button refID="GeoServlet_Menu_Unit_Items_Button5" />
+          <button refID="GeoServlet_Menu_Unit_Items_Button6" />
+        </menu>
+      </menus>
+    </insertModule>
+  </modules>
+</ArcGIS>
